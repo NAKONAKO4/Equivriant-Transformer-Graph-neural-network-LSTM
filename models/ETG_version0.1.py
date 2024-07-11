@@ -72,7 +72,11 @@ class GraphSelfAttention(torch.nn.Module):
 
 
 
-model=GraphSelfAttention("15x0e", "15x0e", "15x0e", "15x0e", 1.3)
+model=GraphSelfAttention("15x0e",
+                         "15x0e",
+                         "15x0e",
+                         "15x0e",
+                         1.3)
 import torch
 from torch_geometric.data import Data, Dataset, DataLoader
 from torch.utils.data import SubsetRandomSampler
