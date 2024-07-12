@@ -1,7 +1,7 @@
 import torch
 from torch.nn import Parameter
 import torch.nn.functional as F
-from .ETG_version0.1 import GraphSelfAttention
+from ETG_version1 import GraphSelfAttention
 from e3nn import o3
 from torch_geometric.nn.inits import glorot, zeros
 class ETGplusLSTM(torch.nn.Module):
