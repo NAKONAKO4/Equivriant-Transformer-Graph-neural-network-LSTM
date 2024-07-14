@@ -19,6 +19,9 @@ from torch.nn import TransformerEncoder, TransformerEncoderLayer
 from torch_cluster import radius_graph
 from torch_geometric.data import Data
 from ETG_version1 import GraphSelfAttention
+from ETGplusLSTM_version1 import ETGplusLSTM
+from ETGplusLSTM_version1 import ETG_LSTM_final
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def random_graph_dataset(num_graphs, num_nodes_per_graph=20):
     irreps_input = o3.Irreps("15x0e")
@@ -43,7 +46,12 @@ model=GraphSelfAttention("15x0e",
                          "15x0e",
                          "15x0e",
                          1.3)
-
+model1 = ETGplusLSTM(o3.Irreps("15x0e"),
+                     o3.Irreps("15x0e"),
+                     o3.Irreps("15x0e"),
+                     o3.Irreps("128x0e"),
+                     1.3)
+model2=ETG_LSTM_final().to(device)
 # Create dataset
 dataset = random_graph_dataset(num_graphs, num_nodes_per_graph)
 
@@ -70,7 +78,9 @@ criterion = torch.nn.MSELoss()  # Example loss function, adjust as needed
 # Training loop
 num_epochs = 50
 model.to(device)
-
+model1.to(device)
+print(dataset)
+'''
 for epoch in range(num_epochs):
     model.train()  # Set model to training mode
     epoch_loss = 0.0
@@ -110,3 +120,13 @@ for epoch in range(num_epochs):
     print(f'Validation Loss after epoch {epoch + 1}: {avg_val_loss:.4f}')
 
 print('Training finished!')
+'''
+pos=dataset[0].pos
+x=dataset[0].x
+h=None
+c=None
+h,c = model2(x, pos, h, c, output=True)
+print(h)
+print(c)
+
+

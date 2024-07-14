@@ -37,10 +37,10 @@ class GraphSelfAttention(torch.nn.Module):
         self.fc_v = nn.FullyConnectedNet([number_of_basis, 16, self.tp_v.weight_numel], act=torch.nn.functional.silu)
         self.dot = o3.FullyConnectedTensorProduct(self.irreps_query, self.irreps_key, "0e")
 
-    def forward(self, data):
-        pos = data.pos
-        f = data.x
-        print(f.device)
+    def forward(self, x, pos):
+        pos = pos
+        f = x
+        #print(f.device)
         edge_src, edge_dst = radius_graph(pos, self.max_radius)
         edge_vec = pos[edge_src] - pos[edge_dst]
         edge_length = edge_vec.norm(dim=1)
