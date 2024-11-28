@@ -18,23 +18,13 @@ year = {2024},
 doi = {10.1021/acs.jcim.4c00930},
     note ={PMID: 39163306},
 
-URL = { 
-    
-        https://doi.org/10.1021/acs.jcim.4c00930
-    
-    
-
-},
-eprint = { 
-    
-        https://doi.org/10.1021/acs.jcim.4c00930
-    
-    
-
-}
-
+URL = {https://doi.org/10.1021/acs.jcim.4c00930},
+eprint = {https://doi.org/10.1021/acs.jcim.4c00930}
 }
 ```
+
+2. Cite this repository
+   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14235715.svg)](https://doi.org/10.5281/zenodo.14235715)
  Run the 'train.py' to see the results.
  
  Up to some benchmarks of 'https://doi.org/10.1021/acs.jcim.4c00930'.
