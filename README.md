@@ -2,6 +2,12 @@
  
  This work is based on 'https://doi.org/10.1021/acs.jcim.4c00930'. 
  
+ Run the 'train.py' to see the results.
+ 
+ Up to some benchmarks of 'https://doi.org/10.1021/acs.jcim.4c00930'.
+ 
+ A more ROBUST big model is on the way!
+ 
 ## How to cite
 
 1. Cite the based articleas follows:
@@ -24,9 +30,10 @@ eprint = {https://doi.org/10.1021/acs.jcim.4c00930}
 ```
 
 2. Cite this repository
+   
    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14235715.svg)](https://doi.org/10.5281/zenodo.14235715)
- Run the 'train.py' to see the results.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
  
- Up to some benchmarks of 'https://doi.org/10.1021/acs.jcim.4c00930'.
- 
- A more ROBUST big model is on the way!
