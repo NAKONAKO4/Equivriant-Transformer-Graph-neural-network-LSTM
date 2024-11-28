@@ -5,6 +5,19 @@
 ## How to cite
 
 1. Cite the based articleas follows:
+
+   ``bibtex
+   @article{original_work,
+       author = {Author Name(s)},
+       title = {Original Article Title},
+       journal = {Journal Name},
+       year = {Year},
+       volume = {Volume},
+       number = {Number},
+       pages = {Pages},
+       doi = {10.1021/acs.jcim.4c00930}
+   }
+   
    '''bibtex
    
    @article{doi:10.1021/acs.jcim.4c00930,
