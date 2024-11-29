@@ -3,7 +3,7 @@
 ![structure](https://github.com/NAKONAKO4/Equivriant-Transformer-Graph-neural-network-LSTM/blob/main/figurereadme.png)
 ---
 
- This work is based on 'https://doi.org/10.1021/acs.jcim.4c00930'. 
+ This work is based on and supplement to 'https://doi.org/10.1021/acs.jcim.4c00930'.
  
  Run the 'train.py' to see the results.
  
