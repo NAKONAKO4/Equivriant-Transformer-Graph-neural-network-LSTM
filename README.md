@@ -1,5 +1,7 @@
-﻿# Equivriant-Transformer-Graph-neural-network-LSTM
+# Equivriant-Transformer-Graph-neural-network-LSTM
  
+---
+
  This work is based on 'https://doi.org/10.1021/acs.jcim.4c00930'. 
  
  Run the 'train.py' to see the results.
