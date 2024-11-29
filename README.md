@@ -1,6 +1,6 @@
 # Equivriant-Transformer-Graph-neural-network-LSTM
 
-![structure][https://github.com/NAKONAKO4/Equivriant-Transformer-Graph-neural-network-LSTM/blob/main/figurereadme.png]
+![structure](https://github.com/NAKONAKO4/Equivriant-Transformer-Graph-neural-network-LSTM/blob/main/figurereadme.png)
 ---
 
  This work is based on 'https://doi.org/10.1021/acs.jcim.4c00930'. 
